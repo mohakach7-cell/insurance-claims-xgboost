@@ -41,13 +41,11 @@ XGBoost had the best ROC-AUC and was used for the scores.
 
 ## How to run
 ```bash
-## Dashboard
-
-![Power BI dashboard](image_2026-10-30_212621416.png)
-
-*Power BI dashboard built on the test-set scores (52,150 claims). "Suspect" refers to the high-value class (claims above 10,000), a proxy target, not confirmed fraud.*
-
 pip install -r requirements.txt
 # put your own BASE.csv next to the notebook, then:
 jupyter notebook notebook.ipynb
 ```
+
+## Dashboard
+![Power BI dashboard](image_2026-10-30_212621416.png)
+*Power BI dashboard built on the test-set scores (52,150 claims). "Suspect" refers to the high-value class (claims above 10,000), a proxy target, not confirmed fraud.*
