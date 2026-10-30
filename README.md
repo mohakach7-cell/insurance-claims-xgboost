@@ -39,13 +39,15 @@ XGBoost had the best ROC-AUC and was used for the scores.
 - **Possible duplicates.** Several top-scored claims share an identical score, so check for duplicate rows across train and test.
 - **Arbitrary risk thresholds.** The 0.30 and 0.70 cut-offs were not tuned to a business cost.
 
+## Dashboard
+
+![Power BI dashboard](image_2026-10-30_212621416.png)
+
+*Power BI dashboard built on the test-set scores (52,150 claims). "Suspect" refers to the high-value class (claims above 10,000), a proxy target, not confirmed fraud.*
+
 ## How to run
 ```bash
 pip install -r requirements.txt
 # put your own BASE.csv next to the notebook, then:
 jupyter notebook notebook.ipynb
 ```
-
-## Dashboard
-![Power BI dashboard](image_2026-10-30_212621416.png)
-*Power BI dashboard built on the test-set scores (52,150 claims). "Suspect" refers to the high-value class (claims above 10,000), a proxy target, not confirmed fraud.*
